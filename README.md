@@ -1,7 +1,6 @@
 # feverfinder
 
-```pip install pyserial```  
-```pip install twilio```
+```pip install -r requirements.txt```
 
 Do:  
 Update the Arduino board through the IDE.  
