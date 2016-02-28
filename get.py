@@ -1,5 +1,6 @@
-# example.py
+from tools import Tool
 import pico
 
 def getData():
-    return 1
+  t = Tool("feverfinder","Shivaal")
+  return t.getTemperature()
