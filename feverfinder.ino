@@ -1,3 +1,4 @@
+const float TEMP_THRESHOLD = 28.0;
 float tempC;
 int reading;
 int tempPin = 0;
@@ -17,7 +18,7 @@ void loop() {
   Serial.println(tempC);
   delay(1000);
 
-  if (tempC > 28.0) { //ideal 38 (real-world threshold)
+  if (tempC > TEMP_THRESHOLD) { //ideal 38 (real-world threshold)
     digitalWrite(13, HIGH);
     //alarm = true;
   }
