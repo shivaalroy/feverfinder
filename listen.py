@@ -12,7 +12,7 @@ while True:
 	count += 1
 	print line
 	if count > 5 and float(line) > TEMPERATURE_THRESHOLD:
-		print "ALERT! High temperature."
+		print "ALERT! High temperature in bed 14."
 		if not alarm_sent:
 			send_sms()
 			alarm_sent = True

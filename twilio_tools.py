@@ -8,4 +8,4 @@ def send_sms():
   client = TwilioRestClient(account_sid, auth_token)
 
   message = client.messages.create(to="+14087868804", from_="+18312466221",
-                                     body="ALERT! High temperature.")
+                                     body="ALERT! High temperature in bed 14.")
