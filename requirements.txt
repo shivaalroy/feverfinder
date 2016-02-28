@@ -1,3 +1,4 @@
 pyserial
 twilio
 pg8000
+pico

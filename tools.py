@@ -21,5 +21,5 @@ class Tool:
     self.conn.commit()
 
   def getTemperature(self):
-    self.cursor.execute("SELECT temperature, time FROM temperatures ORDER BY id DESC LIMIT 20")
+    self.cursor.execute("SELECT time, temperature FROM temperatures ORDER BY time DESC LIMIT 20")
     return self.cursor.fetchone()
