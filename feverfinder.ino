@@ -26,7 +26,7 @@ void loop() {
   /*if (alarm) {
     digitalWrite(13, HIGH);
     delay(10);
-    digitalWrite(13, LOW); 
-    delay(10); 
+    digitalWrite(13, LOW);
+    delay(10);
   }*/
 }

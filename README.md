@@ -1,8 +1,9 @@
 # feverfinder
 
-```pip install pyserial```  
-```pip install twilio```
+```pip install -r requirements.txt```
 
 Do:  
-```python serial.pys```
-Then update the Arduino through the Arduino IDE.
+Update the Arduino board through the IDE.  
+Unplug and then replug the arduino.  
+Run ```python listen.py```  
+Trigger the temperature sensor and the text will be sent.  
