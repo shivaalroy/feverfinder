@@ -19,3 +19,7 @@ class Tool:
   def addTemperature(self,temp,time):
     self.cursor.execute("INSERT INTO temperatures (temperature, time) VALUES (" + str(temp) + ", " + str(time) + ")")
     self.conn.commit()
+
+  def getTemperature(self):
+    self.cursor.execute("SELECT temperature, time FROM temperatures ORDER BY id DESC LIMIT 20")
+    return self.cursor.fetchone()
